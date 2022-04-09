@@ -1,13 +1,13 @@
           MODULE=xf86-video-intel
-         VERSION=Release_3.6.4
-          SOURCE=$MODULE-$VERSION.tar.gz
- SOURCE_URL_FULL=https://github.com/endlessm/xf86-video-intel/archive/$VERSION.tar.gz
-
-      SOURCE_VFY=sha256:8749133c78484a4f079f25df0f5df059a7b670d3b06bb9d2290d9b67bed56d5e
+         VERSION=3.9.6
+          SOURCE=$MODULE-Release_$VERSION.tar.gz
+ SOURCE_URL_FULL=https://github.com/endlessm/xf86-video-intel/archive/Release_$VERSION.tar.gz
+      SOURCE_VFY=sha256:bcd7bf5e1d0e7efacc77ce68b85bd3246d43fff5bc0a1708a7384684e58a6ff2
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$MODULE-Release_$VERSION
    MODULE_PREFIX=${X11R7_PREFIX:-/usr}
         WEB_SITE=http://www.x.org
          ENTERED=20060124
-         UPDATED=20191019
+         UPDATED=20220103
            SHORT="The X.Org video driver for Intel based cards"
 
 cat << EOF
@@ -22,3 +22,4 @@ greater than 8. The driver supports hardware accelerated 3D via the Direct
 Rendering Infrastructure (DRI), but only in depth 16 for the i810/i815 and
 depths 16 and 24 for the 830M and later.
 EOF
+

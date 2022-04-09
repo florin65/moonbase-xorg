@@ -1,0 +1,35 @@
+          MODULE=NVIDIA-390xx
+         VERSION=390.141
+        AVERSION=$VERSION
+          SOURCE=NVIDIA-Linux-x86_64-$VERSION-no-compat32.run
+         SOURCE2=nvidia-settings-$AVERSION.tar.bz2
+         SOURCE3=nvidia-installer-$AVERSION.tar.bz2
+         SOURCE4=nvidia-xconfig-$AVERSION.tar.bz2
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/NVIDIA-Linux-x86_64-$VERSION-no-compat32
+      SOURCE_URL=$NVIDIA_URL/Linux-x86_64/$VERSION
+  SOURCE2_URL[0]=$NVIDIA_URL/nvidia-settings
+  SOURCE3_URL[0]=$NVIDIA_URL/nvidia-installer
+  SOURCE4_URL[0]=$NVIDIA_URL/nvidia-xconfig
+  SOURCE4_URL[1]=http://cgit.freedesktop.org/~aplattner/nvidia-xconfig/snapshot
+      SOURCE_VFY=sha256:d7d763aa52574b554dd3d8cbb93a6a63572a9c2bfd3bc3873ec5338c067f70ba
+     SOURCE2_VFY=sha256:2a6436b9b7d41e63973d6994b28a8580dcc4b90897d45ce14cbda067b2a5d8f8
+     SOURCE3_VFY=sha256:79d0f2d23f74635a5063948dc9165165cdee85aaf10f727a6586714be0845b52
+     SOURCE4_VFY=sha256:56a817a9b08f1bea25ad62c393cf17ac8bed26ca36d67083fa7c47480644c242
+        WEB_SITE=http://www.nvidia.com
+         LICENSE="proprietary"
+         ENTERED=20030804
+         UPDATED=20210225
+           SHORT="X11 NVIDIA binary beta driver for all Geforce 6/7/8/9/GT2xx"
+
+cat << EOF
+These are the Nvidia provided binary X11 drivers for their graphics
+cards. It also has the Linux kernel module needed for all Geforce 6/7/8/9/GT2xx
+cards. Supported GPUs: (6/7/8/9/GTX 2xx families only)
+all Geforce 6xxx
+all Geforce 7xxx
+all Geforce 8xxx
+all Geforce 9xxx
+GeForce GTX 260
+GeForce GTX 280
+Some models may be not supported yet.
+EOF

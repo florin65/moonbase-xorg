@@ -6,7 +6,7 @@ fi &&
 
 export CFLAGS=${CFLAGS/-fno-plt}
 export CXXFLAGS=${CXXFLAGS/-fno-plt}
-export LDFLAGS=${LDFLAGS/,-z,now}
+export LDFLAGS=${LDFLAGS/-Wl,-z,now}
 
 OPTS+=" --enable-dri         \
         --enable-dmx         \
@@ -19,6 +19,7 @@ OPTS+=" --enable-dri         \
         --enable-glamor      \
         --disable-static     \
         --disable-devel-docs \
+        --disable-selective-werror \
         --with-xkb-output=/var/lib/xkb \
         --with-xkb-path=/usr/share/X11/xkb \
         --with-fontrootdir=/usr/share/fonts/"

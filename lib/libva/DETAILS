@@ -1,11 +1,11 @@
           MODULE=libva
-         VERSION=2.7.1
-          SOURCE=$MODULE-$VERSION.tar.gz
-      SOURCE_URL=https://github.com/intel/libva/archive/$VERSION/
-      SOURCE_VFY=sha256:9a3167c9af8c0ce10c4a46791557f934457b78fcc625111dcefaa7f30b7eb289
+         VERSION=2.14.0
+          SOURCE=$MODULE-$VERSION.tar.bz2
+      SOURCE_URL=https://github.com/intel/libva/releases/download/$VERSION
+      SOURCE_VFY=sha256:511e9a74d1ccfb548bc192290603082c11074ac59b17aadfd5d56a3f93e58454
         WEB_SITE=http://www.freedesktop.org/wiki/Software/vaapi
          ENTERED=20110211
-         UPDATED=20200420
+         UPDATED=20220228
            SHORT="Video Acceleration (VA) API for Linux"
 
 cat << EOF
