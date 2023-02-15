@@ -1,0 +1,4 @@
+depends python
+depends cmake
+depends ninja
+depends spirv-headers
