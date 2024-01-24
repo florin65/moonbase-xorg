@@ -1,10 +1,4 @@
 export CXXFLAGS+=" -ffat-lto-objects"
-OPTS+=" -DBUILD_SHARED_LIBS=ON"
+OPTS+=" -DBUILD_SHARED_LIBS=ON -DALLOW_EXTERNAL_SPIRV_TOOLS=ON"
 
-default_cmake_build &&
-
-pushd /usr/lib &&
-  for lib in libglslang*.so; do
-      ln -sf "${lib}" "${lib}.0"
-  done
-popd
+default_cmake_build
