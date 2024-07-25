@@ -1,11 +1,4 @@
-if in_depends $MODULE llvm; then
-  OPTS+=" -D gallium-drivers=auto \
-          -D vulkan-drivers=auto"
- else 
-  OPTS+=" -D gallium-drivers=nouveau,virgl,svga,swrast,i915,iris,crocus,zink \
-          -D vulkan-drivers="""
-fi &&
-
+#DEPRECATION: Option 'glvnd' value 'true' is replaced by 'enabled'
 OPTS+=" -D b_lto=true \
         -D build-tests=false \
         -D b_ndebug=true \
@@ -18,10 +11,12 @@ OPTS+=" -D b_lto=true \
         -D dri3=enabled \
         -D gles2=enabled \
         -D gles1=disabled \
-        -D glvnd=true \
+        -D glvnd=enabled \
         -D valgrind=disabled \
         -D shared-glapi=enabled \
         -D libunwind=enabled \
+        -D vulkan-drivers=auto \
+        -D gallium-drivers=auto \
         -D gallium-va=enabled \
         -D gallium-xa=enabled \
         -D gallium-nine=true \
@@ -31,6 +26,9 @@ OPTS+=" -D b_lto=true \
         -D gallium-omx=bellagio \
         -D gallium-va=enabled \
         -D microsoft-clc=disabled \
+        -D intel-clc=enabled \
+        -D install-intel-clc=true \
+        -D llvm=enabled \
         -D osmesa=true"
 
 default_meson_build &&
