@@ -15,6 +15,12 @@ optional_depends Linux-PAM \
                  "for PAM support" \
                  "y"
 
+optional_depends systemd \
+                 "--with-systemd" \
+                 "--without-systemd" \
+                 "for systemd support" \
+                 "y"
+
 optional_depends %JPEG \
                  "--with-jpeg" \
                  "--without-jpeg" \
