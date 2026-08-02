@@ -1,12 +1,12 @@
           MODULE=spirv-llvm-translator
-         VERSION=22.1.4
+         VERSION=22.1.5
           SOURCE=$MODULE-$VERSION.tar.gz
  SOURCE_URL_FULL=https://github.com/KhronosGroup/SPIRV-LLVM-Translator/archive/refs/tags/v$VERSION.tar.gz
-      SOURCE_VFY=sha256:77888f4e22e312d1ac05737407c45dffcc6d0c9c725f9d08bbeb04a6dbe1a5f2
+      SOURCE_VFY=sha256:3c6dffb4b8d67f5c544370e0c869ec7d22c013d4bb798f24655ec903f26cc5d5
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/SPIRV-LLVM-Translator-$VERSION
         WEB_SITE=https://github.com/KhronosGroup/SPIRV-LLVM-Translator
          ENTERED=20221022
-         UPDATED=20260728
+         UPDATED=20260802
            SHORT="Tool and a library for bi-directional translation between SPIR-V and LLVM IR"
 
 cat << EOF
