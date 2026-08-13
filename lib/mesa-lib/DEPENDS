@@ -9,6 +9,7 @@ depends libXrandr
 depends dbus-glib
 depends python-mako
 depends python-yaml
+depends python-markupsafe
 depends wayland-protocols
 depends libglvnd
 depends libunwind
