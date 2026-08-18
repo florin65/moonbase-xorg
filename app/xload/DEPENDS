@@ -1,2 +1,5 @@
 depends meson
 depends libXaw
+depends libXmu
+depends libXt
+depends util-macros
