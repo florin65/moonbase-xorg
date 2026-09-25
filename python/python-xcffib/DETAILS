@@ -1,14 +1,12 @@
           MODULE=python-xcffib
-         VERSION=1.5.0
+         VERSION=1.12.0
           SOURCE=xcffib-$VERSION.tar.gz
       SOURCE_URL=https://files.pythonhosted.org/packages/source/x/xcffib/
-      SOURCE_VFY=sha256:a95c9465f2f97b4fcede606bd1e08407a32df71cb760fd57bfe53677db691acc
+      SOURCE_VFY=sha256:43452de509c1264d5bcea4bc025ca1bf68272d240ef26d3340b46e11f63d3d4a
 SOURCE_DIRECTORY=$BUILD_DIRECTORY/xcffib-$VERSION
         WEB_SITE=https://pypi.org/project/xcffib/
-            TYPE=python3
-        REPLACES=xcffib
          ENTERED=20180423
-         UPDATED=20230826
+         UPDATED=20260925
            SHORT="A drop in replacement for xpyb, an XCB python binding"
 
 cat << EOF
